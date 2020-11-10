@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'artist';
+  assetsImages = ['../../assets/img/1.jpg', '../../assets/img/2.jpg', '../../assets/img/3.jpg'];
 }
