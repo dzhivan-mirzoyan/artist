@@ -1,0 +1,17 @@
+.card {
+    max-width: 350px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+  
+.header-image {
+    background-image: url('src/assets/img/logo.jpg');
+    background-size: cover;
+}
+
+.translated-paragraph{
+    white-space: pre-wrap;
+}

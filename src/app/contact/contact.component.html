@@ -1,0 +1,29 @@
+<mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>{{'contact.title' | translate}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" style="text-align: center;">
+
+            <p>
+                <mat-form-field appearance="outline" class="field">
+                    <mat-label>{{'contact.subject' | translate}}</mat-label>
+                    <input matInput formControlName="subject" placeholder="{{'contact.fill' | translate}}" maxlength="50">
+                </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field appearance="outline" class="field">
+                    <mat-label>{{'contact.body' | translate}}</mat-label>
+                    <textarea formControlName="body" matInput rows="30" placeholder="{{'contact.fill' | translate}}" #message maxlength="2000"></textarea>
+                    <mat-hint align="end">{{message.value.length}} / 2000</mat-hint>
+                </mat-form-field>
+            </p>
+
+            <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">
+                {{'contact.send' | translate}}
+                <mat-icon>redo</mat-icon>
+            </button>
+        </form>
+    </mat-card-content>
+  </mat-card>

@@ -8,12 +8,24 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+import { GalleryComponent } from './gallery/gallery.component';
+import { BiographyComponent } from './biography/biography.component';
+import { ContactComponent } from './contact/contact.component';
+import { I18nModule } from './i18n/i18n.module';
+import { SelectLanguageComponent } from './select-language/select-language.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GalleryComponent,
+    BiographyComponent,
+    ContactComponent,
+    SelectLanguageComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +35,11 @@ import { HttpClientModule } from '@angular/common/http';
     MatTabsModule,
     MatCardModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    I18nModule
   ],
   providers: [],
   bootstrap: [AppComponent]

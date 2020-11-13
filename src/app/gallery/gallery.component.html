@@ -1,0 +1,19 @@
+<div *ngFor="let image of assetsImages" class="gallery">
+    <ng-template [ngIf]="image.type == 'portrait'">
+        <div>
+            <img [src]="image.path" class="portrait">
+        </div>
+    </ng-template>
+    <ng-template [ngIf]="image.type == 'landscape'">
+        <div>
+            <img [src]="image.path" class="landscape">
+        </div>
+    </ng-template>
+    <ng-template [ngIf]="image.type == 'square'">
+        <div>
+            <img [src]="image.path" class="square">
+        </div>
+    </ng-template>
+    <div style="text-align: center;">{{image.name}}</div>
+    <br>
+</div>
