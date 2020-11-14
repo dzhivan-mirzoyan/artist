@@ -1,5 +1,7 @@
 .card {
     width: 300px;
+    height:530px;
+    overflow-y:scroll;
     display: block;
     margin-top: 10px;
     margin-left: auto;
