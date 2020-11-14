@@ -15,7 +15,7 @@
             <p>
                 <mat-form-field appearance="outline" class="field">
                     <mat-label>{{'contact.body' | translate}}</mat-label>
-                    <textarea formControlName="body" matInput rows="30" placeholder="{{'contact.fill' | translate}}" #message maxlength="2000"></textarea>
+                    <textarea formControlName="body" matInput rows="19" placeholder="{{'contact.fill' | translate}}" #message maxlength="2000"></textarea>
                     <mat-hint align="end">{{message.value.length}} / 2000</mat-hint>
                 </mat-form-field>
             </p>
