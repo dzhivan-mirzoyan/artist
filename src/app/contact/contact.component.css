@@ -1,6 +1,7 @@
 .card {
     width: 300px;
-    height:535px;
+    height:83vh;
+    max-height: 540px;
     display: block;
     margin-top: 10px;
     margin-left: auto;
