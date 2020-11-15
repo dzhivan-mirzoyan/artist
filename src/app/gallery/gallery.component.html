@@ -1,4 +1,4 @@
-<div style="height:680px; overflow-y:scroll;">
+<div>
     <div *ngFor="let image of assetsImages" class="gallery">
         <ng-template [ngIf]="image.type == 'por'">
             <div>
@@ -21,5 +21,12 @@
             </div>
         </ng-template>
         <br>
+    </div>
+
+
+    <div>
+        <button mat-mini-fab color="primary" class="button" (click)="topFunction()">
+            <mat-icon>keyboard_arrow_up</mat-icon>
+        </button>
     </div>
 </div>

@@ -7,6 +7,12 @@
     margin-bottom: 10px;
 }
 
+.button {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+}
+
 .portrait {
     height: 500px;
     width: 350px;

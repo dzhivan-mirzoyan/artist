@@ -41,4 +41,8 @@ export class GalleryComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  topFunction() {
+    window.scroll(0,0);
+  }
+
 }
