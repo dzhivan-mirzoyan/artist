@@ -1,23 +1,23 @@
-<div style="height:680px;overflow-y:scroll">
+<div style="height:680px; overflow-y:scroll;">
     <div *ngFor="let image of assetsImages" class="gallery">
         <ng-template [ngIf]="image.type == 'por'">
             <div>
-                <img [src]="image.path" class="portrait">
+                <img [src]="image.path" class="portrait" style="border-radius:5px;">
             </div>
         </ng-template>
         <ng-template [ngIf]="image.type == 'lan'">
             <div>
-                <img [src]="image.path" class="landscape">
+                <img [src]="image.path" class="landscape" style="border-radius:5px;">
             </div>
         </ng-template>
         <ng-template [ngIf]="image.type == 'squ'">
             <div>
-                <img [src]="image.path" class="square">
+                <img [src]="image.path" class="square" style="border-radius:5px;">
             </div>
         </ng-template>
         <ng-template [ngIf]="image.name != null">
             <div>
-                <div style="text-align: center;">{{image.name}}</div>
+                <div style="text-align: center;"><b>{{image.name}}</b></div>
             </div>
         </ng-template>
         <br>
